@@ -32,7 +32,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: "http://192.168.1.81:3000/",
+    url: "https://netgearstore.netlify.app/",
     name: "Netgear Store Bangladesh",
     description: "Welcome to Netgear Store Bangladesh",
     defaultLocale: "en",
