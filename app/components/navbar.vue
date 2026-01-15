@@ -1,5 +1,7 @@
 <script setup>
-const { data } = await useFetch("/api/menus");
+const { data } = await useFetch("/api/menus", {
+  server: flase,
+});
 
 const mobileOpen = ref(false);
 
