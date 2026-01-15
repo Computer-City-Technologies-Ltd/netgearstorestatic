@@ -129,7 +129,7 @@ useSeoMeta({
           Office Time Saturday to Thursday 10AM to 7PM
         </p>
 
-        <form action="#" class="space-y-6">
+        <form action="#" class="space-y-6" netlify>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
               <label
