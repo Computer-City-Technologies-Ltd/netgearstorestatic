@@ -1,6 +1,6 @@
 # netlify.toml
 [build]
-command = "npm run build"
+command = "npm run generate"
 publish = "dist" # Adjust if your publish directory is different
 
 [images]

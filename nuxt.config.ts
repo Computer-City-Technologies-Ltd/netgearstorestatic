@@ -15,6 +15,12 @@ export default defineNuxtConfig({
     "@netlify/nuxt",
   ],
 
+  ssr: true,
+
+  nitro: {
+    preset: "static",
+  },
+
   image: {
     provider: "netlify",
     domains: ["admindash.comcitybd.com"], // Add your external domains here
