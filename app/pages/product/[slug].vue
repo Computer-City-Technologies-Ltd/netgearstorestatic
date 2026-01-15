@@ -46,7 +46,7 @@ useSeoMeta({
         <div class="w-full px-4 md:w-1/2">
           <div class="overflow-hidden">
             <div class="relative mb-6 lg:mb-10 lg:h-2/4 border">
-              <img
+              <NuxtImg
                 :src="data.photo"
                 :alt="data.name"
                 @click="() => show(0)"
@@ -63,7 +63,7 @@ useSeoMeta({
                 <span
                   class="block border border-gray-300 dark:border-transparent dark:hover:border-gray-300 hover:border-gray-300"
                 >
-                  <img
+                  <NuxtImg
                     :src="photo.src"
                     :alt="data.name"
                     class="object-cover w-full lg:h-20"
@@ -92,6 +92,14 @@ useSeoMeta({
                 v-html="data.short"
               ></div>
             </div>
+
+            <!-- InquiryButton -->
+            <NuxtLink
+              to="/contact"
+              class="inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:text-gray-900 shadow hover:bg-gray-100 mb-8 hover:border"
+            >
+              Inquiry
+            </NuxtLink>
 
             <div class="flex justify-left gap-2 flex-wrap py-4">
               <span

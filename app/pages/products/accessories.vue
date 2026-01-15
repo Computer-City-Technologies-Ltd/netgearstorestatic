@@ -3,13 +3,13 @@ const {
   data: products1,
   pending: p1,
   error: e1,
-} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/0?id[]=78");
+} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=78");
 
 const {
   data: products2,
   pending: p2,
   error: e2,
-} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/0?id[]=81");
+} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=81");
 
 // Merge safely
 const products = computed(() => {
@@ -52,11 +52,11 @@ useSeoMeta({
         <NuxtLink
           v-for="product in products"
           :to="`/product/${product.slug}`"
-          class="bg-purple-50 rounded-lg shadow transform duration-300 hover:-translate-y-2 cursor-pointer"
+          class="bg-gray-50 rounded-lg shadow transform duration-300 hover:-translate-y-2 cursor-pointer"
         >
           <div class="w-full h-80 overflow-hidden">
-            <img
-              :src="product.thumbnail"
+            <NuxtImg
+              :src="product.photo"
               :alt="product.name"
               class="w-full h-full object-cover"
             />
@@ -64,10 +64,9 @@ useSeoMeta({
           <div class="p-4 text-left">
             <h1 class="text-sm font-bold my-4">{{ product.name }}</h1>
             <div
-              class="text-sm text-gray-600 mb-4"
+              class="text-sm text-gray-900 mb-4"
               v-html="product.short"
             ></div>
-            <h2 class="text-lg font-semibold mb-4">{{ product.price }}</h2>
           </div>
         </NuxtLink>
       </div>

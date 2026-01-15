@@ -27,13 +27,13 @@ useSeoMeta({
           v-for="product in data.menus[1].children"
           :to="`/products/${product.url}`"
           :aria-label="product.name"
-          class="bg-purple-50 rounded-lg shadow transform duration-300 hover:-translate-y-2 cursor-pointer"
+          class="bg-gray-100 rounded-lg shadow transform duration-300 hover:-translate-y-2 cursor-pointer"
         >
           <div class="w-full h-80 overflow-hidden bg-white">
             <NuxtImg
               :src="product.thumbnail"
               :alt="product.name"
-              class="w-full h-full object-cover"
+              class="w-full h-full"
             />
           </div>
           <div class="p-4 text-left">

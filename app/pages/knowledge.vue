@@ -18,7 +18,7 @@ useSeoMeta({
           <h2 class="text-center text-4xl text-gray-700">
             How To Login To Netgear Router
           </h2>
-          <img
+          <NuxtImg
             class="mb-8 mt-8 mx-auto"
             src="/assets/images/router_login.jpeg"
             alt=""

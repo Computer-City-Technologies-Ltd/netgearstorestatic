@@ -29,13 +29,13 @@ export default defineEventHandler((event) => {
           {
             name: "Accessories",
             url: "accessories",
-            thumbnail: "/assets/images/accessories.avif",
+            thumbnail: "/assets/images/accessories.jpg",
           },
         ],
       },
 
       { name: "Installation Service", url: "/installation" },
-      { name: "Netgear Router Login", url: "/router" },
+      { name: "Knowledge Base", url: "/knowledge" },
       { name: "Contact", url: "/contact" },
     ],
   };

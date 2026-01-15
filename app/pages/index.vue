@@ -69,11 +69,11 @@ useSeoMeta({
   <!-- brand part -->
   <section class="py-10 bg-white">
     <div class="flex flex-wrap justify-center items-center gap-8">
-      <NuxtImg class="w-128" src="/assets/images/logo1.png" alt="Logo 1" />
+      <!-- <NuxtImg class="w-128" src="/assets/images/logo1.png" alt="Logo 1" />
       <NuxtImg class="w-128" src="/assets/images/logo2.png" alt="Logo 2" />
       <NuxtImg class="w-128" src="/assets/images/logo3.png" alt="Logo 3" />
       <NuxtImg class="w-128" src="/assets/images/logo4.png" alt="Logo 4" />
-      <NuxtImg class="w-128" src="/assets/images/logo5.png" alt="Logo 5" />
+      <NuxtImg class="w-128" src="/assets/images/logo5.png" alt="Logo 5" /> -->
     </div>
   </section>
 
