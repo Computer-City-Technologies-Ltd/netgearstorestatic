@@ -29,7 +29,7 @@ useSeoMeta({
         </svg>
         <NuxtImg
           class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-          src="https://assets.netgear.com/transform/content-card-desktop/f12d805c-3677-4e75-a810-3f64dab360f7/NGEnterprise_desktop"
+          src="/assets/images/NGEnterprise_desktop.webp"
           alt="Netgear Enterprise"
         />
       </div>
