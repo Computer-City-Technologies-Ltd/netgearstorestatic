@@ -69,11 +69,4 @@ export default defineNuxtConfig({
   //     inter: "Outfit",
   //   },
   // },
-
-  // nitro: {
-  //   prerender: {
-  //     routes: ["/", "/categories"],
-  //     crawlLinks: false, // IMPORTANT
-  //   },
-  // },
 });

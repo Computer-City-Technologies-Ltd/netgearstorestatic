@@ -3,12 +3,7 @@ const {
   data: products,
   pending,
   error,
-} = await useFetch(
-  "https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=33",
-  {
-    server: false,
-  }
-);
+} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=33");
 
 useSeoMeta({
   title: "accesspoint Categories",
