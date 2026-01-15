@@ -15,12 +15,9 @@ export default defineNuxtConfig({
     "@netlify/nuxt",
   ],
 
-  ssr: false,
-
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/sitemap.xml"],
     },
   },
 
