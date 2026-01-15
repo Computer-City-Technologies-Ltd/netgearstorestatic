@@ -3,13 +3,17 @@ const {
   data: products1,
   pending: p1,
   error: e1,
-} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=78");
+} = await $fetch(
+  "https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=78"
+);
 
 const {
   data: products2,
   pending: p2,
   error: e2,
-} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=81");
+} = await $fetch(
+  "https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=81"
+);
 
 // Merge safely
 const products = computed(() => {
