@@ -5,4 +5,4 @@ publish = "dist" # Adjust if your publish directory is different
 
 [images]
 # Allow remote images from specific domains, using regex
-remote_images = ["https://admindashboard.comcitybd.com/*"]
+remote_images = ["https://admindash.comcitybd.com/*"]

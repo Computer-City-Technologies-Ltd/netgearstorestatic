@@ -17,7 +17,7 @@ export default defineNuxtConfig({
 
   image: {
     provider: "netlify",
-    domains: ["admindashboard.comcitybd.com"], // Add your external domains here
+    domains: ["admindash.comcitybd.com"], // Add your external domains here
     // other options like formats, quality, etc.
   },
 
