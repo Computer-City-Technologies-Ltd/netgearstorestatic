@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Outfit"; /* A name you choose to use later */
+  src: url("/assets/fonts/outfit-latin-100-normal.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Helps prevent render-blocking behavior */
+}
+
+html {
+  font-family: "Outfit", "sans-serif" !important;
+}
