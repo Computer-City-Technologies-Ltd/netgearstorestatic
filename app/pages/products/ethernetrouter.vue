@@ -3,9 +3,7 @@ const {
   data: products,
   pending,
   error,
-} = await $fetch(
-  "https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=68"
-);
+} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=68");
 
 useSeoMeta({
   title: "Ethernetrouter Categories",

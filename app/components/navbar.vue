@@ -1,42 +1,5 @@
 <script setup>
-const menus = [
-  { name: "Home", url: "/" },
-  {
-    name: "Products",
-    url: "/categories",
-    children: [
-      {
-        name: "Ethernet Router",
-        url: "ethernetrouter",
-        thumbnail: "/assets/images/ethernetrouter.avif",
-      },
-      {
-        name: "Wireless Router",
-        url: "wirelessrouter",
-        thumbnail: "/assets/images/wirelessrouter.avif",
-      },
-      {
-        name: "Access Point",
-        url: "accesspoint",
-        thumbnail: "/assets/images/accesspoint.avif",
-      },
-      {
-        name: "Switch",
-        url: "switch",
-        thumbnail: "/assets/images/switch.avif",
-      },
-      {
-        name: "Accessories",
-        url: "accessories",
-        thumbnail: "/assets/images/accessories.jpg",
-      },
-    ],
-  },
-
-  { name: "Installation Service", url: "/installation" },
-  { name: "Knowledge Base", url: "/knowledge" },
-  { name: "Contact", url: "/contact" },
-];
+const { data } = await useFetch("/api/menus");
 
 const mobileOpen = ref(false);
 
@@ -47,11 +10,6 @@ const open = () => {
 const close = () => {
   mobileOpen.value = false;
 };
-
-onMounted(async () => {
-  // await console.log(menus);
-  console.log("Created By Rezwan Saki");
-});
 </script>
 
 <template>
@@ -105,7 +63,11 @@ onMounted(async () => {
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
-          <div v-for="item in menus" :key="item.name" class="relative group">
+          <div
+            v-for="item in data.menus"
+            :key="item.name"
+            class="relative group"
+          >
             <NuxtLink
               :aria-label="item.name"
               :to="item.url"
@@ -154,7 +116,7 @@ onMounted(async () => {
             <div class="relative flex items-center">
               <form class="flex items-center ml-4">
                 <input
-                  type="text"
+                  type="search"
                   placeholder="Search"
                   class="w-45 px-2 py-1 rounded-l-md border border-gray-300 text-sm"
                 />
@@ -227,7 +189,7 @@ onMounted(async () => {
       <div class="relative mt-4 md:hidden" v-if="mobileOpen">
         <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-900 rounded-lg border">
           <NuxtLink
-            v-for="item in menus"
+            v-for="item in data.menus"
             :key="item.name"
             :to="item.url"
             :aria-label="item.name"

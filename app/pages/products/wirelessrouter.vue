@@ -3,9 +3,7 @@ const {
   data: products,
   pending,
   error,
-} = await $fetch(
-  "https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=75"
-);
+} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=75");
 
 useSeoMeta({
   title: "Wireless Router Categories",

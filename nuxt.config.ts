@@ -15,12 +15,10 @@ export default defineNuxtConfig({
     "@netlify/nuxt",
   ],
 
-  ssr: true,
-
   nitro: {
-    preset: "static",
     prerender: {
       crawlLinks: true,
+      routes: ["/sitemap.xml", "/robots.txt"],
     },
   },
 
