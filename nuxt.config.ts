@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "@nuxtjs/seo",
     "@nuxtjs/robots",
+    "@netlify/nuxt",
   ],
 
   app: {
