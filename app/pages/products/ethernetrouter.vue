@@ -3,7 +3,7 @@ const {
   data: products,
   pending,
   error,
-} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=68");
+} = useFetch("/api/brands/Netgear/200?id[]=68");
 
 useSeoMeta({
   title: "Ethernetrouter Categories",

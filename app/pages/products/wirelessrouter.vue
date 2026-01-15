@@ -3,7 +3,7 @@ const {
   data: products,
   pending,
   error,
-} = useFetch("https://admindash.comcitybd.com/api/brands/Netgear/200?id[]=75");
+} = useFetch("/api/brands/Netgear/200?id[]=75");
 
 useSeoMeta({
   title: "Wireless Router Categories",
