@@ -136,7 +136,7 @@ const companys = [
     <div
       class="border-t border-gray-600 mt-5 py-4 text-center text-sm text-gray-100"
     >
-      Copyright © 2025 Netgear Bangladesh
+      Copyright © 2026 Netgear Bangladesh
     </div>
   </footer>
 </template>
