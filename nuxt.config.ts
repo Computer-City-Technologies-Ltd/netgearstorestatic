@@ -15,10 +15,23 @@ export default defineNuxtConfig({
     "@netlify/nuxt",
   ],
 
+  ssr: false,
+
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ["/sitemap.xml", "/robots.txt"],
+      routes: ["/sitemap.xml"],
+    },
+  },
+
+  sitemap: {
+    discoverImages: true,
+    zeroRuntime: true,
+  },
+
+  router: {
+    options: {
+      strict: true,
     },
   },
 
@@ -51,6 +64,8 @@ export default defineNuxtConfig({
     description: "Welcome to Netgear Store Bangladesh",
     defaultLocale: "en",
   },
+
+  plugins: ["~/plugins/crypto-polyfill.client"],
 
   // theme: {
   //   fontFamily: {
