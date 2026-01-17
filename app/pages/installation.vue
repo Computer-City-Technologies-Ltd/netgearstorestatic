@@ -3,7 +3,7 @@ useSeoMeta({
   title: "Installation",
   description:
     "Our products are designed to be simple to set up so that you can easily do it yourself. However our products also usually offers a rich set of features that others do not offer and a professional installation and setup service could enable you to rip the benefits of those exclusive features and realize the true potential of the device.",
-  ogTitle: "Installation - Netgear Store Bangladesh",
+  ogTitle: "Installation - Netgear Bangladesh",
   ogDescription:
     "Our products are designed to be simple to set up so that you can easily do it yourself. However our products also usually offers a rich set of features that others do not offer and a professional installation and setup service could enable you to rip the benefits of those exclusive features and realize the true potential of the device.",
   ogType: "website",

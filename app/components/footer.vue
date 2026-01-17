@@ -5,7 +5,7 @@ const cares = [
 ];
 
 const companys = [
-  { title: "About Netgear Store", link: "/about" },
+  { title: "About Netgear", link: "/about" },
   { title: "Privacy Policy", link: "/policy" },
   { title: "Terms & Conditions", link: "/terms" },
   { title: "Cookies Policy", link: "/cookie" },

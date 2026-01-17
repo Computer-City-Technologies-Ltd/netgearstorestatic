@@ -2,10 +2,10 @@
 useSeoMeta({
   title: "Terms & Conditions",
   description:
-    "These terms and conditions outline the rules and regulations for the use of Netgear Store Bangladesh’s Website, located at https://netgearstore.com.bd.",
+    "These terms and conditions outline the rules and regulations for the use of Netgear Bangladesh’s Website, located at https://netgearstore.com.bd.",
   ogTitle: "Terms & Conditions",
   ogDescription:
-    "These terms and conditions outline the rules and regulations for the use of Netgear Store Bangladesh’s Website, located at https://netgearstore.com.bd.",
+    "These terms and conditions outline the rules and regulations for the use of Netgear Bangladesh’s Website, located at https://netgearstore.com.bd.",
   ogType: "website",
 });
 </script>
@@ -63,19 +63,19 @@ useSeoMeta({
           <h2
             class="mb-4 sm:text-3xl text-2xl title-font font-medium text-gray-700"
           >
-            Welcome to Netgear Store Bangladesh!
+            Welcome to Netgear Bangladesh!
           </h2>
           <div class="leading-relaxed mt-2">
             <p class="leading-relaxed">
               These terms and conditions outline the rules and regulations for
-              the use of Netgear Store Bangladesh’s Website, located at
+              the use of Netgear Bangladesh’s Website, located at
               https://netgearstore.com.bd. <br />
               <br />
 
               By accessing this website we assume you accept these terms and
-              conditions. Do not continue to use Netgear Store Bangladesh if you
-              do not agree to take all of the terms and conditions stated on
-              this page. <br />
+              conditions. Do not continue to use Netgear Bangladesh if you do
+              not agree to take all of the terms and conditions stated on this
+              page. <br />
               <br />
 
               The following terminology applies to these Terms and Conditions,
@@ -97,9 +97,9 @@ useSeoMeta({
               Cookies <br />
               <br />
 
-              We employ the use of cookies. By accessing Netgear Store
-              Bangladesh, you agreed to use cookies in agreement with the
-              Netgear Store Bangladesh’s Privacy Policy. <br />
+              We employ the use of cookies. By accessing Netgear Bangladesh, you
+              agreed to use cookies in agreement with the Netgear Bangladesh’s
+              Privacy Policy. <br />
               <br />
 
               Most interactive websites use cookies to let us retrieve the
@@ -112,26 +112,26 @@ useSeoMeta({
               License <br />
               <br />
 
-              Unless otherwise stated, Netgear Store Bangladesh and/or its
-              licensors own the intellectual property rights for all material on
-              Netgear Store Bangladesh. All intellectual property rights are
-              reserved. You may access this from Netgear Store Bangladesh for
-              your own personal use subjected to restrictions set in these terms
-              and conditions. <br />
+              Unless otherwise stated, Netgear Bangladesh and/or its licensors
+              own the intellectual property rights for all material on Netgear
+              Bangladesh. All intellectual property rights are reserved. You may
+              access this from Netgear Bangladesh for your own personal use
+              subjected to restrictions set in these terms and conditions.
+              <br />
               <br />
 
               You must not: <br />
               <br />
 
-              Republish material from Netgear Store Bangladesh <br />
+              Republish material from Netgear Bangladesh <br />
               <br />
-              Sell, rent or sub-license material from Netgear Store Bangladesh
+              Sell, rent or sub-license material from Netgear Bangladesh
               <br />
               <br />
-              Reproduce, duplicate or copy material from Netgear Store
-              Bangladesh <br />
+              Reproduce, duplicate or copy material from Netgear Bangladesh
               <br />
-              Redistribute content from Netgear Store Bangladesh <br />
+              <br />
+              Redistribute content from Netgear Bangladesh <br />
               <br />
 
               This Agreement shall begin on the date hereof. Our Terms and
@@ -141,22 +141,21 @@ useSeoMeta({
 
               Parts of this website offer an opportunity for users to post and
               exchange opinions and information in certain areas of the website.
-              Netgear Store Bangladesh does not filter, edit, publish or review
+              Netgear Bangladesh does not filter, edit, publish or review
               Comments prior to their presence on the website. Comments do not
-              reflect the views and opinions of Netgear Store Bangladesh,its
-              agents and/or affiliates. Comments reflect the views and opinions
-              of the person who post their views and opinions. To the extent
-              permitted by applicable laws, Netgear Store Bangladesh shall not
-              be liable for the Comments or for any liability, damages or
-              expenses caused and/or suffered as a result of any use of and/or
-              posting of and/or appearance of the Comments on this website.
+              reflect the views and opinions of Netgear Bangladesh,its agents
+              and/or affiliates. Comments reflect the views and opinions of the
+              person who post their views and opinions. To the extent permitted
+              by applicable laws, Netgear Bangladesh shall not be liable for the
+              Comments or for any liability, damages or expenses caused and/or
+              suffered as a result of any use of and/or posting of and/or
+              appearance of the Comments on this website.
               <br />
               <br />
 
-              Netgear Store Bangladesh reserves the right to monitor all
-              Comments and to remove any Comments which can be considered
-              inappropriate, offensive or causes breach of these Terms and
-              Conditions. <br />
+              Netgear Bangladesh reserves the right to monitor all Comments and
+              to remove any Comments which can be considered inappropriate,
+              offensive or causes breach of these Terms and Conditions. <br />
               <br />
 
               You warrant and represent that: <br />
@@ -178,8 +177,8 @@ useSeoMeta({
               <br />
               <br />
 
-              You hereby grant Netgear Store Bangladesh a non-exclusive license
-              to use, reproduce, edit and authorize others to use, reproduce and
+              You hereby grant Netgear Bangladesh a non-exclusive license to
+              use, reproduce, edit and authorize others to use, reproduce and
               edit any of your Comments in any and all forms, formats or media.
               <br />
               <br />
@@ -239,8 +238,8 @@ useSeoMeta({
               ourselves or to our accredited businesses; (b) the organization
               does not have any negative records with us; (c) the benefit to us
               from the visibility of the hyperlink compensates the absence of
-              Netgear Store Bangladesh; and (d) the link is in the context of
-              general resource information. <br />
+              Netgear Bangladesh; and (d) the link is in the context of general
+              resource information. <br />
               <br />
 
               These organizations may link to our home page so long as the link:
@@ -252,11 +251,11 @@ useSeoMeta({
 
               If you are one of the organizations listed in paragraph 2 above
               and are interested in linking to our website, you must inform us
-              by sending an e-mail to Netgear Store Bangladesh. Please include
-              your name, your organization name, contact information as well as
-              the URL of your site, a list of any URLs from which you intend to
-              link to our Website, and a list of the URLs on our site to which
-              you would like to link. Wait 2-3 weeks for a response. <br />
+              by sending an e-mail to Netgear Bangladesh. Please include your
+              name, your organization name, contact information as well as the
+              URL of your site, a list of any URLs from which you intend to link
+              to our Website, and a list of the URLs on our site to which you
+              would like to link. Wait 2-3 weeks for a response. <br />
               <br />
 
               Approved organizations may hyperlink to our Website as follows:
@@ -272,7 +271,7 @@ useSeoMeta({
               linking party’s site. <br />
               <br />
 
-              No use of Netgear Store Bangladesh’s logo or other artwork will be
+              No use of Netgear Bangladesh’s logo or other artwork will be
               allowed for linking absent a trademark license agreement. <br />
               <br />
               iFrames <br />

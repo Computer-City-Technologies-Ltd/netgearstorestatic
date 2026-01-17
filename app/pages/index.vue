@@ -3,7 +3,7 @@ useSeoMeta({
   title: "Home",
   description:
     "Shop genuine Netgear routers, Orbi Mesh systems, and Nighthawk gaming routers at the best prices in Bangladesh. Official warranty, expert support, and fast delivery in Dhaka & across BD.",
-  ogTitle: "Home - Netgear Store Bangladesh",
+  ogTitle: "Home - Netgear Bangladesh",
   ogDescription:
     "Shop genuine Netgear routers, Orbi Mesh systems, and Nighthawk gaming routers at the best prices in Bangladesh. Official warranty, expert support, and fast delivery in Dhaka & across BD.",
   ogType: "website",
@@ -41,7 +41,6 @@ useSeoMeta({
             class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none Outfit"
           >
             Netgear <br class="hidden md:block" />
-            <span class="text-[#1cb9a0]">Store </span>
             <span class="inline-block text-[#1cb9a0]"> Bangladesh</span>
           </h2>
           <p
@@ -195,11 +194,11 @@ useSeoMeta({
           class="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9"
         >
           <NuxtLink
-            to="/categories"
+            to="/contact"
             role="button"
             class="inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-gray-900 hover:text-white transition-all duration-200 bg-gray-100 border-2 border-gray-900 sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
           >
-            Book a demo
+            Contact Us
           </NuxtLink>
         </div>
       </div>
@@ -250,17 +249,17 @@ useSeoMeta({
         <p
           class="max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-[#1cb9a0] sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight"
         >
-          Netgear Store Bangladesh
+          Netgear Bangladesh
         </p>
         <h1 class="max-w-5xl mx-auto px-6 text-lg text-gray-600 font-inter">
-          Welcome to the Official NETGEAR Store in Bangladesh. FREE SHIPPING
-          ACROSS BANGLADESH. Upgrade your online experience with latest products
-          from NETGEAR. Get official NETGEAR warranty and professional
-          installation service at a great price. Search for the latest home and
-          business solutions products available in Bangladesh directly from
-          NETGEAR, backed by NETGEAR’s highly acclaimed warranty policy. Get
-          detailed information about products and professional assistance to
-          choose the right product for you. Shop now!
+          Welcome to the Official NETGEAR in Bangladesh. FREE SHIPPING ACROSS
+          BANGLADESH. Upgrade your online experience with latest products from
+          NETGEAR. Get official NETGEAR warranty and professional installation
+          service at a great price. Search for the latest home and business
+          solutions products available in Bangladesh directly from NETGEAR,
+          backed by NETGEAR’s highly acclaimed warranty policy. Get detailed
+          information about products and professional assistance to choose the
+          right product for you. Shop now!
         </h1>
       </div>
     </div>
