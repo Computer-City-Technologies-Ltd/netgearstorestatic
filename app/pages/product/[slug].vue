@@ -7,10 +7,19 @@ const { data, pending, error } = await useFetch(`/api/product/${slug}`);
 const imgs = await data.value.gallery;
 const visible = ref(false);
 const index = ref(0);
-const mainimg = await data.photo;
+const mainimg = computed(() => data.value?.photo);
+const imgsRef = ref([]);
+const indexRef = ref(0);
 
 const show = function (idx) {
   index.value = idx;
+  visible.value = true;
+};
+
+const showSingle = (img) => {
+  if (!img) return;
+  imgsRef.value = [img];
+  indexRef.value = 0;
   visible.value = true;
 };
 
@@ -45,9 +54,9 @@ useSeoMeta({
           <div class="overflow-hidden">
             <div class="relative mb-6 lg:mb-10 lg:h-2/4 border">
               <NuxtImg
-                :src="data.photo"
+                :src="mainimg"
                 :alt="data.name"
-                @click="() => show(0)"
+                @click="showSingle(mainimg)"
                 class="object-cover w-full lg:h-full"
               />
             </div>
@@ -125,6 +134,13 @@ useSeoMeta({
       @hide="visible = false"
       @on-prev="handlePrev"
       @on-next="handleNext"
+    />
+
+    <VueEasyLightbox
+      :visible="visible"
+      :imgs="imgsRef"
+      :index="indexRef"
+      @hide="visible = false"
     />
   </client-only>
 </template>
