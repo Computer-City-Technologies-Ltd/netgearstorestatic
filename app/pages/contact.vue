@@ -3,9 +3,9 @@ useSeoMeta({
   title: "Contact Us",
   ogTitle: "Contact Us",
   description:
-    "Netgear Store Bangladesh, 75-76, B.S. Bhaban, 3rd Floor, Laboratory Road, Dhaka-1205, Bangladesh.",
+    "Netgear Bangladesh, 75-76, B.S. Bhaban, 3rd Floor, Laboratory Road, Dhaka-1205, Bangladesh.",
   ogDescription:
-    "Netgear Store Bangladesh, 75-76, B.S. Bhaban, 3rd Floor, Laboratory Road, Dhaka-1205, Bangladesh.",
+    "Netgear Bangladesh, 75-76, B.S. Bhaban, 3rd Floor, Laboratory Road, Dhaka-1205, Bangladesh.",
   ogType: "website",
 });
 </script>
@@ -26,11 +26,11 @@ useSeoMeta({
 
         <div class="relative z-10">
           <h3 class="text-3xl md:text-4xl font-serif-display mb-6">
-            Netgear Store Bangladesh
+            Netgear Bangladesh
           </h3>
           <p class="text-blue-100 text-lg mb-10 font-light leading-relaxed">
-            Netgear Store Bangladesh, 75-76, B.S. Bhaban, 3rd Floor, Laboratory
-            Road, Dhaka-1205, Bangladesh.
+            Netgear Bangladesh, 75-76, B.S. Bhaban, 3rd Floor, Laboratory Road,
+            Dhaka-1205, Bangladesh.
           </p>
 
           <div class="space-y-6">

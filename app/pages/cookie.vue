@@ -27,14 +27,13 @@ useSeoMeta({
           </div>
           <div class="leading-relaxed mt-2">
             <p class="leading-relaxed">
-              We employ the use of cookies. By accessing Netgear Store
-              Bangladesh, you agreed to use cookies in agreement with the
-              Netgear Store Bangladesh’s Privacy Policy. Most interactive
-              websites use cookies to let us retrieve the user’s details for
-              each visit. Cookies are used by our website to enable the
-              functionality of certain areas to make it easier for people
-              visiting our website. None of our affiliate/advertising partners
-              will use this cookies.
+              We employ the use of cookies. By accessing Netgear Bangladesh, you
+              agreed to use cookies in agreement with the Netgear Bangladesh’s
+              Privacy Policy. Most interactive websites use cookies to let us
+              retrieve the user’s details for each visit. Cookies are used by
+              our website to enable the functionality of certain areas to make
+              it easier for people visiting our website. None of our
+              affiliate/advertising partners will use this cookies.
             </p>
           </div>
           <div

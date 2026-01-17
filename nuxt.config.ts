@@ -57,16 +57,10 @@ export default defineNuxtConfig({
 
   site: {
     url: "https://netgearstore.netlify.app/",
-    name: "Netgear Store Bangladesh",
-    description: "Welcome to Netgear Store Bangladesh",
+    name: "Netgear Bangladesh",
+    description: "Welcome to Netgear Bangladesh",
     defaultLocale: "en",
   },
 
-  plugins: ["~/plugins/crypto-polyfill.client"],
-
-  // theme: {
-  //   fontFamily: {
-  //     inter: "Outfit",
-  //   },
-  // },
+  plugins: ["~/plugins/crypto-polyfill.client"]
 });
