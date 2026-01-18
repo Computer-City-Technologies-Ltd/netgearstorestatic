@@ -15,7 +15,7 @@ const close = () => {
 <template>
   <nav class="relative">
     <!-- Main Navbar Content -->
-    <div class="relative px-4 sm:px-8 py-4 bg-white border-b-2">
+    <div class="relative px-4 sm:px-8 py-4 bg-white font-bold border-b-2">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center space-x-3 group">

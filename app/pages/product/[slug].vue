@@ -85,18 +85,18 @@ useSeoMeta({
           <div class="lg:pl-20">
             <div class="mb-8">
               <span
-                class="text-lg font-medium text-rose-500 dark:text-rose-200"
+                class="text-md font-bold text-[#1cb9a0] dark:text-[#1cb9a0]"
               >
                 {{ data.model }}
               </span>
               <h2
-                class="max-w-xl mt-2 mb-6 text-lg font-bold dark:text-gray-400 md:text-xl"
+                class="max-w-xl mt-2 mb-6 text-lg font-bold dark:text-gray-500 md:text-xl"
               >
                 {{ data.name }}
               </h2>
 
               <div
-                class="max-w-md mb-8 text-gray-700 dark:text-gray-400"
+                class="max-w-md mb-8 text-lg text-gray-700 dark:text-gray-800"
                 v-html="data.short"
               ></div>
             </div>
