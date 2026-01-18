@@ -30,17 +30,12 @@ useSeoMeta({
           deployment, or equipping a small office, Netgear provides reliable,
           scalable networking that meets diverse customer needs in Bangladesh.
         </p>
-        <button
-          class="bg-black text-white font-bold px-6 py-3 rounded-lg hover:bg-gray-200 hover:text-black transition"
-        >
-          Design Your Network
-        </button>
       </div>
     </div>
 
     <!-- Right Column (Image Large) -->
     <div class="w-full md:w-3/5 h-full">
-      <img
+      <NuxtImg
         src="/assets/images/TopHero_desktop_solutions.webp"
         alt="Hero Image"
         class="w-full h-full object-cover"
@@ -52,7 +47,7 @@ useSeoMeta({
   <section class="w-full h-[572px] flex">
     <!-- Left Column (Large Image) -->
     <div class="w-full md:w-3/5 h-full">
-      <img
+      <NuxtImg
         src="/assets/images/TopHero_desktop_solutions.webp"
         alt="Hero Image"
         class="w-full h-full object-cover"
@@ -96,7 +91,7 @@ useSeoMeta({
 
     <!-- Right Column (Image Large) -->
     <div class="w-full md:w-3/5 h-full">
-      <img
+      <NuxtImg
         src="/assets/images/Hero_Banner_Short_Desktop_2.webp"
         alt="Hero Image"
         class="w-full h-full object-cover"
@@ -108,7 +103,7 @@ useSeoMeta({
   <section class="w-full h-[572px] flex">
     <!-- Left Column (Large Image) -->
     <div class="w-full md:w-3/5 h-full">
-      <img
+      <NuxtImg
         src="/assets/images/Hero_Banner_Short_Desktop_3.webp"
         alt="Hero Image"
         class="w-full h-full object-cover"
@@ -145,7 +140,7 @@ useSeoMeta({
 
     <!-- Right Column (Image Large) -->
     <div class="w-full md:w-3/5 h-full">
-      <img
+      <NuxtImg
         src="/assets/images/Hero_Banner_Short_Desktop_2.webp"
         alt="Hero Image"
         class="w-full h-full object-cover"
