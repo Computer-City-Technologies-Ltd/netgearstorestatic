@@ -1,4 +1,5 @@
 <script setup>
+const router = useRouter();
 const { data } = await useFetch("/api/menus");
 
 const mobileOpen = ref(false);
@@ -9,6 +10,16 @@ const open = () => {
 
 const close = () => {
   mobileOpen.value = false;
+};
+const searchdata = {
+  search: "",
+};
+const submitForm = async () => {
+  console.log(searchdata.search);
+  router.push({
+    path: "/search",
+    query: { q: searchdata.search },
+  });
 };
 </script>
 
@@ -114,8 +125,9 @@ const close = () => {
           <div class="hidden sm:flex relative group">
             <div class="absolute -inset-0.5"></div>
             <div class="relative flex items-center">
-              <form class="flex items-center ml-4">
+              <form @submit.prevent="submitForm" class="flex items-center ml-4">
                 <input
+                  v-model="searchdata.search"
                   type="search"
                   placeholder="Search"
                   class="w-45 px-2 py-1 rounded-l-md border border-gray-300 text-sm"

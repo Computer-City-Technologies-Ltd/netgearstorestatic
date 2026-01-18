@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "@nuxtjs/robots",
     "@netlify/nuxt",
+    "nuxt-meilisearch",
   ],
 
   nitro: {
@@ -62,5 +63,12 @@ export default defineNuxtConfig({
     defaultLocale: "en",
   },
 
-  plugins: ["~/plugins/crypto-polyfill.client"]
+  plugins: ["~/plugins/crypto-polyfill.client"],
+
+  meilisearch: {
+    hostUrl: "https://quick.comcitybd.com/", //required
+    searchApiKey: "RRrpdBf6vRrp2nJbWQGZWVwg5LGITU0P", // required
+    adminApiKey: "RRrpdBf6vRrp2nJbWQGZWVwg5LGITU0P", // optional
+    serverSideUsage: true, // default: false
+  },
 });
