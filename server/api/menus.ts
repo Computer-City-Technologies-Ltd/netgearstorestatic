@@ -33,10 +33,8 @@ export default defineEventHandler((event) => {
           },
         ],
       },
-
-      { name: "Installation Service", url: "/installation" },
-      { name: "Knowledge Base", url: "/knowledge" },
-      { name: "Contact", url: "/contact" },
+      { name: "Solution", url: "/solution" },
+      { name: "Contact", url: "/contact" }
     ],
   };
 });

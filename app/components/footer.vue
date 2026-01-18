@@ -40,6 +40,10 @@ const companys = [
               </a>
             </template>
           </li>
+
+          <li>
+            <a href="/warranty"> Warranty </a>
+          </li>
         </ul>
       </div>
 
@@ -65,6 +69,7 @@ const companys = [
               info@netgearstore.com.bd
             </a>
           </p>
+          <p class="pb-6">Call: 01958077533</p>
           <p class="text-gray-100 leading-7">
             75-76, B.S. Bhaban, 3rd Floor, Laboratory Road, Dhaka-1205,
             Bangladesh.

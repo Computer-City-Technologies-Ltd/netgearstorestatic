@@ -32,9 +32,7 @@ const menus = [
       },
     ],
   },
-
-  { name: "Installation Service", url: "/installation" },
-  { name: "Knowledge Base", url: "/knowledge" },
+  { name: "Solution", url: "/solution" },
   { name: "Contact", url: "/contact" },
 ];
 
