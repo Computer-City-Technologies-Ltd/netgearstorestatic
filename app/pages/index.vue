@@ -64,7 +64,7 @@ const photos = [
             >
               <p class="chakra-text css-1vxj0b9">
                 <span
-                  class="bg-green-800 text-white p-2 rounded-lg text-3xl css-1vxj0b9"
+                  class="text-white font-bold p-2 rounded-lg text-3xl css-1vxj0b9"
                 >
                   {{ data.name }}
                 </span>
@@ -94,11 +94,15 @@ const photos = [
     </div>
 
     <!-- Two Large Columns -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-10 mx-auto">
       <!-- Column 1 -->
       <div class="flex flex-col overflow-hidden group">
         <!-- Image -->
-        <img src="/assets/images/orb.webp" alt="orbi" class="w-full" />
+        <img
+          src="/assets/images/NGEnterprise_desktop1.webp"
+          alt="orbi"
+          class="w-full"
+        />
 
         <!-- Text & Button below image -->
         <div class="p-6 text-left">
@@ -122,7 +126,11 @@ const photos = [
       <!-- Column 2 -->
       <div class="flex flex-col overflow-hidden group">
         <!-- Image -->
-        <img src="/assets/images/av.webp" alt="Feature 1" class="w-full" />
+        <img
+          src="/assets/images/NGAV_desktop.webp"
+          alt="Feature 1"
+          class="w-full"
+        />
 
         <!-- Text & Button below image -->
         <div class="p-6 text-left">
