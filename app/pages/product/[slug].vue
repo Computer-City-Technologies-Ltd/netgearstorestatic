@@ -6,6 +6,7 @@ const { data, pending, error } = await useFetch(`/api/product/${slug}`);
 
 const imgs = await data.value.gallery;
 const visible = ref(false);
+const visibles = ref(false);
 const index = ref(0);
 const mainimg = computed(() => data.value?.photo);
 const imgsRef = ref([]);
@@ -20,7 +21,7 @@ const showSingle = (img) => {
   if (!img) return;
   imgsRef.value = [img];
   indexRef.value = 0;
-  visible.value = true;
+  visibles.value = true;
 };
 
 const handlePrev = function (oldIndex, newIndex) {};
@@ -137,10 +138,10 @@ useSeoMeta({
     />
 
     <VueEasyLightbox
-      :visible="visible"
+      :visible="visibles"
       :imgs="imgsRef"
       :index="indexRef"
-      @hide="visible = false"
+      @hide="visibles = false"
     />
   </client-only>
 </template>
