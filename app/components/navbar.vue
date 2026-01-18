@@ -71,7 +71,7 @@ const close = () => {
             <NuxtLink
               :aria-label="item.name"
               :to="item.url"
-              class="flex items-center gap-1 text-md font-bold hover:font-black text-gray-900 hover:text-gray-600"
+              class="flex items-center gap-1 text-md text-gray-900 hover:text-gray-600"
             >
               {{ item.name }}
               <svg
@@ -93,7 +93,7 @@ const close = () => {
             <!-- Dropdown -->
             <div
               v-if="item.children"
-              class="absolute left-0 top-full mt-3 w-56 bg-white border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10"
+              class="text-black absolute left-0 top-full mt-3 w-56 bg-white border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-10"
             >
               <NuxtLink
                 v-for="child in item.children"
