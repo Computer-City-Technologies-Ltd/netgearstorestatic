@@ -122,7 +122,7 @@ useSeoMeta({
       </div>
 
       <div class="lg:w-7/12 p-10 md:p-14 bg-white relative">
-        <h2 class="text-4xl md:text-5xl font-serif-display text-[#1cb9a0] mb-2">
+        <h2 class="text-4xl md:text-5xl font-serif-display text-[#1CB9A0] mb-2">
           Contact Us
         </h2>
         <p class="text-gray-500 mb-8">

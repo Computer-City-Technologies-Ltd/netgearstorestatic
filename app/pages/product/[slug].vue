@@ -85,7 +85,7 @@ useSeoMeta({
           <div class="lg:pl-20">
             <div class="mb-8">
               <span
-                class="text-md font-bold text-[#1cb9a0] dark:text-[#1cb9a0]"
+                class="text-md font-bold text-[#1CB9A0] dark:text-[#1CB9A0]"
               >
                 {{ data.model }}
               </span>
@@ -104,7 +104,7 @@ useSeoMeta({
             <!-- InquiryButton -->
             <NuxtLink
               to="/contact"
-              class="inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white hover:text-gray-900 shadow hover:bg-gray-100 mb-8 hover:border"
+              class="inline-flex items-center gap-2 rounded-full bg-[#1CB9A0] px-5 py-2.5 text-sm font-semibold text-white hover:text-gray-900 shadow hover:bg-gray-100 mb-8 hover:border"
             >
               Inquiry
             </NuxtLink>

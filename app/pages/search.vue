@@ -19,7 +19,7 @@ watch(
     <Breadcrumb />
     <div class="mx-auto container px-4 py-8 sm:px-6 sm:py-8 lg:px-8">
       <h2 class="text-lg font-semibold tracking-tight text-gray-900 capitalize">
-        search result "{{ route.query.q }}"
+        search result - "{{ route.query.q }}"
       </h2>
 
       <div
