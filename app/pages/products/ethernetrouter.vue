@@ -8,6 +8,7 @@ const {
     "id[]": 68,
   },
   default: () => [],
+  server: false,
 });
 
 useSeoMeta({

@@ -8,6 +8,7 @@ const {
   query: {
     "id[]": 71,
   },
+  server: false,
 });
 
 useSeoMeta({

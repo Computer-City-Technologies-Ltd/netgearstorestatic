@@ -7,6 +7,7 @@ const {
   query: {
     "id[]": 78,
   },
+  server: false,
   default: () => [],
 });
 
