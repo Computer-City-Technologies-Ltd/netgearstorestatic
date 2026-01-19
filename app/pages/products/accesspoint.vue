@@ -3,7 +3,10 @@ const {
   data: products,
   pending,
   error,
-} = await useFetch("/api/brands/Netgear/200?id[]=33", {
+} = await useFetch("/api/brands/Netgear/200", {
+  query: {
+    "id[]": 33,
+  },
   default: () => [],
 });
 

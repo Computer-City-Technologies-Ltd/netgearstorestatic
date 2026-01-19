@@ -3,8 +3,11 @@ const {
   data: products,
   pending,
   error,
-} = await useFetch("/api/brands/Netgear/200?id[]=71", {
+} = await useFetch("/api/brands/Netgear/200", {
   default: () => [],
+  query: {
+    "id[]": 71,
+  },
 });
 
 useSeoMeta({
