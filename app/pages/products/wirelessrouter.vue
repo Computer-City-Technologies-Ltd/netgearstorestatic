@@ -3,7 +3,9 @@ const {
   data: products,
   pending,
   error,
-} = await useFetch("/api/brands/Netgear/200?id[]=75");
+} = await useFetch("/api/brands/Netgear/200?id[]=75", {
+  default: () => [],
+});
 
 useSeoMeta({
   title: "Wireless Router Categories",

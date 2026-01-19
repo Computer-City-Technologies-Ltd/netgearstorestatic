@@ -2,7 +2,9 @@
 const route = useRoute();
 const slug = route.params.slug;
 
-const { data, pending, error } = await useFetch(`/api/product/${slug}`);
+const { data, pending, error } = await useFetch(`/api/product/${slug}`, {
+  default: () => [],
+});
 
 const imgs = await data.value.gallery;
 const visible = ref(false);
