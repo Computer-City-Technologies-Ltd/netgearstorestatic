@@ -3,7 +3,7 @@ const {
   data: products,
   pending,
   error,
-} = useFetch("/api/brands/Netgear/200?id[]=33");
+} = await useFetch("/api/brands/Netgear/200?id[]=33");
 
 useSeoMeta({
   title: "accesspoint Categories",

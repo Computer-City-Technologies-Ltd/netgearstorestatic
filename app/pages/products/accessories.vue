@@ -3,13 +3,13 @@ const {
   data: products1,
   pending: p1,
   error: e1,
-} = useFetch("/api/brands/Netgear/200?id[]=78");
+} = await useFetch("/api/brands/Netgear/200?id[]=78");
 
 const {
   data: products2,
   pending: p2,
   error: e2,
-} = useFetch("/api/brands/Netgear/200?id[]=81");
+} = await useFetch("/api/brands/Netgear/200?id[]=81");
 
 // Merge safely
 const products = computed(() => {
