@@ -34,7 +34,7 @@ const photos = [
         <span class="block text-6xl md:text-7xl font-black text-gray-900"
           >Powering</span
         >
-        <span class="text-4xl md:text-5xl font-extrabold text-green-800 mt-2">
+        <span class="text-4xl md:text-5xl font-extrabold text-[#1CB9A0] mt-2">
           Extraordinary Experiences,
           <span class="text-gray-900">Everywhere</span>
         </span>
@@ -82,8 +82,8 @@ const photos = [
     <div class="mx-auto mb-20 text-center">
       <h2 class="text-5xl sm:text-6xl font-extrabold mb-8">NETGEAR</h2>
       <h2 class="text-5xl sm:text-6xl font-extrabold mb-4">
-        <span class="text-[#1cb9a0]">Smarter Networking</span> for Small and
-        Medium <span class="text-[#1cb9a0]">Enterprises</span>
+        <span class="text-[#1CB9A0]">Smarter Networking</span> for Small and
+        Medium <span class="text-[#1CB9A0]">Enterprises</span>
       </h2>
       <p class="text-white leading-[1.5rem] px-10 mx-auto tracking-[0.5px]">
         At NETGEAR Enterprise, we deliver performance that goes beyond
@@ -116,7 +116,7 @@ const photos = [
           </div>
           <NuxtLink
             to="/products/switch"
-            class="bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-6 rounded transition mt-10"
+            class="bg-[#1CB9A0] hover:bg-[#1CA0A0] text-white font-bold py-4 px-6 rounded transition mt-10"
           >
             Learn More
           </NuxtLink>
@@ -144,7 +144,7 @@ const photos = [
           </div>
           <NuxtLink
             to="/products/switch"
-            class="bg-green-600 hover:bg-green-500 text-white font-bold py-4 px-6 rounded transition mt-10"
+            class="bg-[#1CB9A0] hover:bg-[#1CA0A0] text-white font-bold py-4 px-6 rounded transition mt-10"
           >
             Learn More
           </NuxtLink>
