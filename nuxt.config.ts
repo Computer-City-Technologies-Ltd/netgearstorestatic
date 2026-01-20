@@ -16,12 +16,6 @@ export default defineNuxtConfig({
     "nuxt-meilisearch",
   ],
 
-  routeRules: {
-    "/api/**": {
-      proxy: "https://admindash.comcitybd.com/api/**",
-    },
-  },
-
   nitro: {
     preset: "netlify",
     prerender: {
