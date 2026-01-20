@@ -72,4 +72,10 @@ export default defineNuxtConfig({
     adminApiKey: "RRrpdBf6vRrp2nJbWQGZWVwg5LGITU0P", // optional
     serverSideUsage: true, // default: false
   },
+
+  runtimeConfig: {
+    public: {
+      apiBase: "https://admindash.comcitybd.com/api",
+    },
+  },
 });

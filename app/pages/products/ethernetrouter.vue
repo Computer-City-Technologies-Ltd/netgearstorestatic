@@ -1,9 +1,11 @@
 <script setup>
+const config = useRuntimeConfig();
+
 const {
   data: products,
   pending,
   error,
-} = await useFetch("/api/brands/Netgear/200", {
+} = await useFetch(`${config.public.apiBase}/brands/Netgear/200`, {
   query: {
     "id[]": 68,
   },
