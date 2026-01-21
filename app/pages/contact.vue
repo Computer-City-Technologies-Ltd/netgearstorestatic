@@ -9,6 +9,7 @@ useSeoMeta({
   ogType: "website",
 });
 </script>
+
 <template>
   <section class="py-20 px-4 md:px-8">
     <div
@@ -129,7 +130,12 @@ useSeoMeta({
           Office Time Saturday to Thursday 10AM to 7PM
         </p>
 
-        <form name="contact" method="POST" class="space-y-6" netlify>
+        <form
+          name="contact"
+          class="space-y-6"
+          action="https://formspree.io/f/xnjjobpl"
+          method="POST"
+        >
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="space-y-2">
               <label
@@ -141,6 +147,7 @@ useSeoMeta({
               <input
                 type="text"
                 id="firstname"
+                name="firstname"
                 placeholder="First Name"
                 class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white focus:ring-4 focus:ring-blue-600/10 transition-all duration-300"
               />
@@ -152,6 +159,7 @@ useSeoMeta({
               <input
                 type="text"
                 id="lastname"
+                name="lastname"
                 placeholder="Last Name"
                 class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white focus:ring-4 focus:ring-blue-600/10 transition-all duration-300"
               />
@@ -166,6 +174,7 @@ useSeoMeta({
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="name@gmail.com"
                 class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white focus:ring-4 focus:ring-blue-600/10 transition-all duration-300"
               />
@@ -178,6 +187,7 @@ useSeoMeta({
                 <input
                   type="text"
                   id="phone"
+                  name="phone"
                   placeholder="Mobile Number"
                   class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white focus:ring-4 focus:ring-blue-600/10 transition-all duration-300"
                 />
@@ -192,13 +202,14 @@ useSeoMeta({
             <textarea
               id="message"
               rows="4"
+              name="message"
               placeholder="Your Messages"
               class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 text-gray-700 placeholder-gray-400 focus:outline-none focus:border-blue-600 focus:bg-white focus:ring-4 focus:ring-blue-600/10 transition-all duration-300 resize-none"
             ></textarea>
           </div>
 
           <button
-            type="button"
+            type="submit"
             class="group w-full md:w-auto text-white bg-gray-900 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:bg-gray-700 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
           >
             Submit

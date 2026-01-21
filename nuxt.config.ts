@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     preset: "netlify",
     prerender: {
       crawlLinks: true,
+      routes: ["/sitemap.xml", "/robots.txt"],
     },
   },
 
@@ -28,16 +29,9 @@ export default defineNuxtConfig({
     zeroRuntime: true,
   },
 
-  router: {
-    options: {
-      strict: true,
-    },
-  },
-
   image: {
     provider: "netlify",
-    domains: ["admindash.comcitybd.com"], // Add your external domains here
-    // other options like formats, quality, etc.
+    domains: ["admindash.comcitybd.com"],
   },
 
   app: {
