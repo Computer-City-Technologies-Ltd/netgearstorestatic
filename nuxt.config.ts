@@ -52,7 +52,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: "https://netgearstore.netlify.app/",
+    url: "https://netgearstore.com.bd/",
     name: "Netgear Bangladesh",
     description: "Welcome to Netgear Bangladesh",
     defaultLocale: "en",
