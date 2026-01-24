@@ -22,6 +22,7 @@ const {
   query: {
     "id[]": 81,
   },
+  server: false,
 });
 
 // Merge safely
