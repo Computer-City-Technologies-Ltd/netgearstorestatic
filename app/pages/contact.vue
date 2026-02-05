@@ -58,7 +58,7 @@ useSeoMeta({
                 >
                   Support & Consultancy
                 </p>
-                <p class="text-lg">01958077533</p>
+                <p class="text-lg">+8801938858833</p>
               </div>
             </div>
 
@@ -88,7 +88,7 @@ useSeoMeta({
                 >
                   Technical Support
                 </p>
-                <p class="text-lg">01956111888</p>
+                <p class="text-lg">+8801938858833</p>
               </div>
             </div>
 

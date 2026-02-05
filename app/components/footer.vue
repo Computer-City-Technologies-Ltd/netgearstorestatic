@@ -69,7 +69,7 @@ const companys = [
               info@netgearstore.com.bd
             </a>
           </p>
-          <p class="pb-6">Call: 01958077533</p>
+          <p class="pb-6">Call: +8801938858833</p>
           <p class="text-gray-100 leading-7">
             75-76, B.S. Bhaban, 3rd Floor, Laboratory Road, Dhaka-1205,
             Bangladesh.
