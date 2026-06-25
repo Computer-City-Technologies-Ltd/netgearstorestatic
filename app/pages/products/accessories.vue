@@ -1,88 +1,165 @@
 <script setup>
+import { ref, onMounted } from "vue";
+
 const config = useRuntimeConfig();
 
-const {
-  data: products1,
-  pending: p1,
-  error: e1,
-} = await useFetch(`${config.public.apiBase}/brands/Netgear/200`, {
-  query: {
-    "id[]": 78,
-  },
-  server: false,
-  default: () => [],
+const pending = ref(true);
+const error = ref(null);
+
+const productsList = ref([]);
+const attributes = ref([]);
+const selectedAttributes = ref([]);
+
+const categoryIds = [78, 81];
+
+const getdata = async () => {
+  pending.value = true;
+  error.value = null;
+
+  try {
+    const attParams = selectedAttributes.value.join(",");
+
+    const responses = await Promise.all(
+      categoryIds.map((id) =>
+        $fetch(
+          `${config.public.apiBase}/brands/Netgear/200?id=${id}&att=${attParams}`,
+        ),
+      ),
+    );
+
+    const allProducts = responses.flatMap(
+      (response) => response?.products?.data || [],
+    );
+
+    productsList.value = [
+      ...new Map(allProducts.map((item) => [item.id, item])).values(),
+    ];
+
+    if (attributes.value.length === 0 && responses[0]?.attributes) {
+      attributes.value = responses[0].attributes;
+    }
+  } catch (err) {
+    error.value = err;
+    console.error(err);
+  } finally {
+    pending.value = false;
+  }
+};
+
+const passatt = async () => {
+  await getdata();
+};
+
+onMounted(async () => {
+  await getdata();
 });
-
-const {
-  data: products2,
-  pending: p2,
-  error: e2,
-} = await useFetch(`${config.public.apiBase}/brands/Netgear/200`, {
-  default: () => [],
-  query: {
-    "id[]": 81,
-  },
-  server: false,
-});
-
-// Merge safely
-const products = computed(() => {
-  const list1 = Array.isArray(products1.value?.data)
-    ? products1.value.data
-    : [];
-
-  const list2 = Array.isArray(products2.value?.data)
-    ? products2.value.data
-    : [];
-
-  return [...list1, ...list2];
-});
-
-const pending = computed(() => p1.value || p2.value);
-const error = computed(() => e1.value || e2.value);
 
 useSeoMeta({
-  title: "Accessories Categories",
-  ogTitle: "Accessories Categories",
+  title: "Switch Categories",
+  ogTitle: "Switch Categories",
   description:
-    "Find genuine Netgear accessories in Bangladesh. Shop official power adapters, high-gain antennas, SFP modules, and mounting kits. Ensure 100% compatibility and performance for your network. Buy now!",
+    "Upgrade your network with Netgear Switches in Bangladesh. Shop Unmanaged, Smart Managed, and PoE switches at the best prices. Official warranty & fast delivery in BD!",
   ogDescription:
-    "Find genuine Netgear accessories in Bangladesh. Shop official power adapters, high-gain antennas, SFP modules, and mounting kits. Ensure 100% compatibility and performance for your network. Buy now!",
+    "Upgrade your network with Netgear Switches in Bangladesh. Shop Unmanaged, Smart Managed, and PoE switches at the best prices. Official warranty & fast delivery in BD!",
   ogType: "website",
 });
 </script>
 
 <template>
-  <div class="container py-12 mx-auto p-4">
-    <div v-if="pending">Loading...</div>
-
-    <div v-else-if="error">Failed to load products</div>
-
-    <section v-else>
-      <Categories class="pb-6" />
-      <div
-        class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-      >
-        <NuxtLink
-          v-for="product in products"
-          :to="`/product/${product.slug}`"
-          class="bg-gray-50 rounded-lg shadow transform duration-300 hover:-translate-y-2 cursor-pointer"
+  <div class="container mx-auto py-12 p-4">
+    <section class="flex flex-col lg:flex-row gap-6">
+      <!-- Sidebar -->
+      <aside v-if="attributes && attributes.length" class="w-full lg:w-1/4">
+        <div
+          v-for="attribute in attributes"
+          :key="attribute.id"
+          class="rounded-lg p-4 sticky top-4 shadow mt-4 bg-white border border-gray-100"
         >
-          <div class="w-full h-80 overflow-hidden">
-            <NuxtImg
-              :src="product.photo"
-              :alt="product.name"
-              class="w-full h-full object-cover"
-            />
+          <h2 class="text-xl font-bold mb-4 text-gray-800">
+            {{ attribute.name }}
+          </h2>
+
+          <ul class="space-y-2">
+            <li
+              v-for="subattribute in attribute.attribute"
+              :key="subattribute.id"
+            >
+              <div class="flex items-center">
+                <input
+                  :id="'attr-' + subattribute.id"
+                  type="checkbox"
+                  v-model="selectedAttributes"
+                  :value="subattribute.id"
+                  @change="passatt"
+                  class="w-4 h-4 border border-gray-300 rounded-sm focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                />
+
+                <label
+                  :for="'attr-' + subattribute.id"
+                  class="select-none ms-2 text-sm font-medium text-gray-700 cursor-pointer"
+                >
+                  {{ subattribute.name }}
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Products Area -->
+      <div :class="attributes?.length ? 'w-full lg:w-3/4' : 'w-full'">
+        <Categories class="pb-6" />
+
+        <div v-if="pending" class="py-20 text-center text-gray-500 font-medium">
+          <div class="animate-pulse flex flex-col items-center">
+            <span class="text-lg">Updating products...</span>
           </div>
-          <div class="p-4 text-left">
-            <h1 class="text-sm font-bold my-4">{{ product.name }}</h1>
-            <div
-              class="text-sm text-gray-900 mb-4"
-              v-html="product.short"
-            ></div>
+        </div>
+
+        <div
+          v-else-if="error"
+          class="py-20 text-center text-red-500 font-medium"
+        >
+          Failed to load products. Please try again.
+        </div>
+
+        <div
+          v-else
+          class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <NuxtLink
+            v-for="product in productsList"
+            :key="product.id"
+            :to="`/product/${product.slug}`"
+            class="bg-gray-50 rounded-lg shadow transform duration-300 hover:-translate-y-2 cursor-pointer overflow-hidden"
+          >
+            <div class="w-full h-80 overflow-hidden bg-gray-200">
+              <NuxtImg
+                :src="product.photo"
+                :alt="product.name"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="p-4 text-left">
+              <h1 class="text-sm font-bold my-4 text-gray-900 line-clamp-2">
+                {{ product.name }}
+              </h1>
+
+              <div
+                class="text-sm text-gray-600 mb-4 line-clamp-3"
+                v-html="product.short"
+              ></div>
+            </div>
+          </NuxtLink>
+
+          <div
+            v-if="productsList.length === 0"
+            class="col-span-full text-center py-10 text-gray-500"
+          >
+            No products found matching the criteria.
           </div>
-        </NuxtLink>
+        </div>
       </div>
     </section>
   </div>

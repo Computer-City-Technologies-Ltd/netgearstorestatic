@@ -10,6 +10,8 @@ const attributes = ref([]);
 
 const selectedAttributes = ref([]);
 
+const catid = 71;
+
 const getdata = async function () {
   pending.value = true;
   error.value = null;
@@ -18,7 +20,7 @@ const getdata = async function () {
     const attParams = selectedAttributes.value.join(",");
 
     const response = await $fetch(
-      `${config.public.apiBase}/brands/Netgear/200?id=71&att=${attParams}`,
+      `${config.public.apiBase}/brands/Netgear/200?id=${catid}&att=${attParams}`,
     );
 
     productsList.value = response?.products?.data || [];
@@ -33,9 +35,7 @@ const getdata = async function () {
   }
 };
 
-// চেকবক্সে টিক দিলে বা তুলে নিলে এই ফাংশনটি চলবে
 const passatt = async function (id) {
-  // যদি আইডি অলরেডি অ্যারেতে থাকে তবে রিমুভ করবে, না থাকলে অ্যাড করবে (v-model এটি অটো করে, নিচে টেমপ্লেটে দেখুন)
   await getdata();
 };
 
@@ -57,9 +57,9 @@ useSeoMeta({
 <template>
   <div class="container mx-auto py-12 p-4">
     <section class="flex flex-col lg:flex-row gap-6">
-      <!-- ১. সাইডবার ফিল্টার: এটি সম্পূর্ণ স্বাধীন, তাই লোডিংয়ের সময়ও টিকে থাকবে -->
-      <aside class="w-full lg:w-1/4">
+      <aside v-if="attributes && attributes.length" class="w-full lg:w-1/4">
         <div
+          v-if="attributes.length != 0"
           class="rounded-lg p-4 sticky top-4 shadow mt-4 bg-white border border-gray-100"
           v-for="attribute in attributes"
           :key="attribute.id"
@@ -93,20 +93,23 @@ useSeoMeta({
             </li>
           </ul>
         </div>
+        <div
+          v-else
+          class="rounded-lg p-4 sticky top-4 shadow mt-4 bg-white border border-gray-100"
+        >
+          <h2 class="text-xl font-bold mb-4 text-gray-800">No filter found!</h2>
+        </div>
       </aside>
 
-      <!-- ২. ডানপাশের প্রোডাক্ট এরিয়া -->
-      <div class="w-full lg:w-3/4">
+      <div :class="attributes?.length ? 'w-full lg:w-3/4' : 'w-full'">
         <Categories class="pb-6" />
 
-        <!-- লোডিং অবস্থা: এটি শুধু প্রোডাক্ট গ্রিডের জায়গায় লোডার দেখাবে, সাইডবার ঠিকই থাকবে -->
         <div v-if="pending" class="py-20 text-center text-gray-500 font-medium">
           <div class="animate-pulse flex flex-col items-center">
             <span class="text-lg">Updating products...</span>
           </div>
         </div>
 
-        <!-- এরর অবস্থা -->
         <div
           v-else-if="error"
           class="py-20 text-center text-red-500 font-medium"
@@ -114,7 +117,6 @@ useSeoMeta({
           Failed to load products. Please try again.
         </div>
 
-        <!-- প্রোডাক্ট গ্রিড -->
         <div
           v-else
           class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
@@ -144,7 +146,6 @@ useSeoMeta({
             </div>
           </NuxtLink>
 
-          <!-- যদি কোনো প্রোডাক্ট খুঁজে পাওয়া না যায় -->
           <div
             v-if="productsList.length === 0"
             class="col-span-full text-center py-10 text-gray-500"

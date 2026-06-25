@@ -2,24 +2,52 @@
 const config = useRuntimeConfig();
 
 const {
-  data: products,
-  pending,
-  error,
+  data: products1,
+  pending: p1,
+  error: e1,
+} = await useFetch(`${config.public.apiBase}/brands/Netgear/200`, {
+  query: {
+    "id[]": 78,
+  },
+  server: false,
+  default: () => [],
+});
+
+const {
+  data: products2,
+  pending: p2,
+  error: e2,
 } = await useFetch(`${config.public.apiBase}/brands/Netgear/200`, {
   default: () => [],
   query: {
-    "id[]": 71,
+    "id[]": 81,
   },
   server: false,
 });
 
+// Merge safely
+const products = computed(() => {
+  const list1 = Array.isArray(products1.value?.data)
+    ? products1.value.data
+    : [];
+
+  const list2 = Array.isArray(products2.value?.data)
+    ? products2.value.data
+    : [];
+
+  return [...list1, ...list2];
+});
+
+const pending = computed(() => p1.value || p2.value);
+const error = computed(() => e1.value || e2.value);
+
 useSeoMeta({
-  title: "Switch Categories",
-  ogTitle: "Switch Categories",
+  title: "Accessories Categories",
+  ogTitle: "Accessories Categories",
   description:
-    "Upgrade your network with Netgear Switches in Bangladesh. Shop Unmanaged, Smart Managed, and PoE switches at the best prices. Official warranty & fast delivery in BD!",
+    "Find genuine Netgear accessories in Bangladesh. Shop official power adapters, high-gain antennas, SFP modules, and mounting kits. Ensure 100% compatibility and performance for your network. Buy now!",
   ogDescription:
-    "Upgrade your network with Netgear Switches in Bangladesh. Shop Unmanaged, Smart Managed, and PoE switches at the best prices. Official warranty & fast delivery in BD!",
+    "Find genuine Netgear accessories in Bangladesh. Shop official power adapters, high-gain antennas, SFP modules, and mounting kits. Ensure 100% compatibility and performance for your network. Buy now!",
   ogType: "website",
 });
 </script>
@@ -36,7 +64,7 @@ useSeoMeta({
         class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         <NuxtLink
-          v-for="product in products.data"
+          v-for="product in products"
           :to="`/product/${product.slug}`"
           class="bg-gray-50 rounded-lg shadow transform duration-300 hover:-translate-y-2 cursor-pointer"
         >
