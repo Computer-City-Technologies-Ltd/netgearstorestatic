@@ -60,7 +60,7 @@ useSeoMeta({
       <aside v-if="attributes && attributes.length" class="w-full lg:w-1/4">
         <div
           v-if="attributes.length != 0"
-          class="rounded-lg p-4 sticky top-4 shadow mt-4 bg-white border border-gray-100"
+          class="rounded-lg p-4 shadow mt-4 bg-white border border-gray-100"
           v-for="attribute in attributes"
           :key="attribute.id"
         >

@@ -73,7 +73,7 @@ useSeoMeta({
         <div
           v-for="attribute in attributes"
           :key="attribute.id"
-          class="rounded-lg p-4 sticky top-4 shadow mt-4 bg-white border border-gray-100"
+          class="rounded-lg p-4 shadow mt-4 bg-white border border-gray-100"
         >
           <h2 class="text-xl font-bold mb-4 text-gray-800">
             {{ attribute.name }}
